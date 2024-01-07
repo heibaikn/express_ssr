@@ -14,7 +14,7 @@ const app = createSSRApp({
 })
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  const feApp = createApp()
+  // const feApp = createApp()
   // renderToString(feApp).then((html) => {
   //   res.render('index', { title: 'Express', abc: html });
   // })
