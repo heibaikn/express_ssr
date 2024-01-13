@@ -12,16 +12,18 @@ const app = createSSRApp({
   data: () => ({ count: 1 }),
   template: `<button @click="count++">{{ count }}</button>`
 })
+router.get('/about', function (req, res, next) {
+  console.log("134");
+  renderToString(app).then((html) => {
+    res.render('page/about/index', { title: 'Express', abc: html });
+  })
+});
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  // const feApp = createApp()
-  // renderToString(feApp).then((html) => {
-  //   res.render('index', { title: 'Express', abc: html });
-  // })
   renderToString(app).then((html) => {
-    res.render('index', { title: 'Express', abc: html });
+    res.render('page/index/index', { title: 'Express', abc: html });
   })
-
 });
+
 
 module.exports = router;

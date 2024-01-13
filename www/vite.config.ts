@@ -10,15 +10,13 @@ export default defineConfig({
       '@': resolve(__dirname, 'src'),
     },
   },
-  // plugins: [
-
-  // ],
   build: {
+    outDir:'../dist',
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
         index: resolve(__dirname, 'page/index/index.html'),
-        about: resolve(__dirname, 'page/about/about.html'),
+        about: resolve(__dirname, 'page/about/index.html'),
         // index: 'page/index/index.js',
         // about: 'page/about/index.js',
         // main: 'src/main.ts', // 第一个 HTML 入口
