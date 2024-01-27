@@ -1,0 +1,11 @@
+{
+  "watch": ["server", "config"],
+  "ext": "js,json",
+  "ignore": ["src/**/*.test.js"],
+  "execMap": {
+    "js": "node --harmony"
+  },
+  "delay": 1000,
+  "legacyWatch": true,
+  "verbose": true
+}

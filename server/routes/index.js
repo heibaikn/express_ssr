@@ -15,13 +15,13 @@ const app = createSSRApp({
 router.get('/about', function (req, res, next) {
   console.log("134");
   renderToString(app).then((html) => {
-    res.render('page/about/index', { title: 'Express', abc: html });
+    res.render('about/index', { title: 'Express', abc: html });
   })
 });
 /* GET home page. */
 router.get('/', function (req, res, next) {
   renderToString(app).then((html) => {
-    res.render('page/index/index', { title: 'Express', abc: html });
+    res.render('index/index', { title: 'Express', abc: html });
   })
 });
 

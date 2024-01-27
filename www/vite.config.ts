@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import {resolve } from 'path';
+import { resolve } from 'path';
 import { createHtmlPlugin } from 'vite-plugin-html';
 
 // https://vitejs.dev/config/
@@ -11,7 +11,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir:'../dist',
+    outDir: '../dist',
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
@@ -55,4 +55,7 @@ export default defineConfig({
     //   ]
     // }),
   ],
+  server: {
+    port: 7001
+  }
 })
