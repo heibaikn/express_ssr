@@ -17,6 +17,7 @@
     "vue": "^3.3.13"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
     "@vitejs/plugin-vue": "^4.5.2",
     "cross-env": "^7.0.3",
     "merge": "^2.1.1",
