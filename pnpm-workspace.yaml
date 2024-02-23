@@ -1,4 +1,5 @@
 packages:
   - www
   - web/app1
+  - server
 
