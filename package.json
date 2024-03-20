@@ -9,7 +9,7 @@
     "build:fe": "pnpm -C www build",
     "d:app": "nodemon server.js",
     "b:app": "pnpm -C web/app1 build",
-    "p:app": "cross-env NODE_ENV=production node server.js"
+    "p:app": "pnpm -C ./server start"
   },
   "dependencies": {
     "@std/esm": "^0.26.0",
